@@ -11,4 +11,4 @@ COPY . /app
 ENV FLASK_APP=app:app
 ENV FLASK_RUN_HOST=0.0.0.0
 
-CMD ["python", "run.py"]
+CMD ["python", "app.py"]
