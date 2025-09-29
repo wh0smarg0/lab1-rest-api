@@ -4,7 +4,7 @@ from datetime import datetime
 def register_routes(app):
     @app.route("/", methods=["GET"])
     def hello():
-        return jsonify({"message": "Hello world!"})
+        return jsonify({"message": "Привіт, користувачу! 🎉"})
 
     @app.route("/healthcheck", methods=["GET"])
     def healthcheck():
