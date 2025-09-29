@@ -54,13 +54,13 @@ python app.py
 1. Зібрати образ:
 
 ```bash
-docker build -t lab1-rest-api .
+docker build . -t lab1-rest-api:latest
 ```
 
 2. Запустити контейнер:
 
 ```bash
-docker run -p 5000:5000 -e PORT=5000 lab1-rest-api
+docker run -it --rm --network=host -e PORT=5000 lab1-rest-api:latest
 ```
 
 3. Перевірка роботи:
@@ -99,3 +99,4 @@ docker-compose up --build
 ```text
 Error: Invalid value for '--port' / '-p': '$PORT' is not a valid integer
 ```
+
