@@ -10,4 +10,4 @@ services:
       PORT: "5000"
     ports:
       - "5000:5000"
-    command: sh -c "flask run --host=0.0.0.0 --port=${PORT}"
+    command: python app.py

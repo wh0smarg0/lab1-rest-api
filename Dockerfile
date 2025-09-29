@@ -10,6 +10,5 @@ COPY . /app
 
 ENV FLASK_APP=app:app
 ENV FLASK_RUN_HOST=0.0.0.0
-ENV FLASK_RUN_PORT=$PORT
 
-CMD ["flask", "run", "--host=0.0.0.0", "--port=$PORT"]
+CMD ["python", "run.py"]
